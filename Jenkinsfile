@@ -1,14 +1,14 @@
 pipeline {
     agent any
     environment {
-        TOMCAT_SERVER = 'http://<your-tomcat-server>:8080'
+        TOMCAT_SERVER = http://localhost:8080/
         TOMCAT_USER = 'admin' // Replace with your Tomcat username
         TOMCAT_PASSWORD = 'password' // Replace with your Tomcat password
     }
     stages {
         stage('Checkout Code') {
             steps {
-                git url: 'https://github.com/your-repo/sample-app.git', branch: 'main'
+                git url: 'https://github.com/YashPathare/DM4.git', branch: 'main'
             }
         }
         stage('Build') {
