@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        TOMCAT_SERVER = http://localhost:8080/
+        TOMCAT_SERVER = "http://localhost:8080/"
         TOMCAT_USER = 'admin' // Replace with your Tomcat username
         TOMCAT_PASSWORD = 'password' // Replace with your Tomcat password
     }
